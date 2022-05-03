@@ -1,0 +1,10 @@
+PP evoie d'article check
+
+affiche dernier article dans page d'acceuil
+gestion d'adésion + sécuriter(sauto supprimer et être sur)
+forum
+affiche acceuil forum dans page d'acceuil
+
+Modifier son compte (admim + sécuriter/ user *message de modification)
+
+envoie de mail 

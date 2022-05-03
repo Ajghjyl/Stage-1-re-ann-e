@@ -1,0 +1,40 @@
+ if (name.equals("Jean") && password.equals("duJardin")&& email.equals("benoit.francoismartenot789@gmail.com")) 
+				 {
+					 	request.getRequestDispatcher("/Connected.jsp").forward(request, response);
+						session.setAttribute("isConnected", true);
+				 }
+				 else
+				 {
+						request.getRequestDispatcher("/Welcome.jsp").forward(request, response);
+						session.setAttribute("isConnected", false); 
+				 }
+				 
+				 
+String name = request.getParameter("txtName");
+String lastname = request.getParameter("txtLastName");
+String email = request.getParameter("txtEmail");
+				session.setAttribute("txtName", name);
+				session.setAttribute("txtLastName", lastname);
+				session.setAttribute("txtEmail", email);	
+				
+			if (name == null)  name = "";
+			if (lastname == null)  lastname = "";
+			if (email == null)  email = "";	
+			
+			String name = request.getParameter("txtName");
+			String lastname = request.getParameter("txtLastName");
+			String email = request.getParameter("txtEmail");
+			
+				<h1> Bienvenue <%= login %></h1>
+				<fieldset>
+						<legend>Identification</legend>
+						<label for='nom'>Quel est votre nom?</label>
+						<input type='text' name=nom id=nom/>
+						<label for='prénom'>Quel est votre Prénom?</label>
+						<input type='text' name=prenom id=prenom autofocus/>
+						<label for='email'>Quel est votre email?</label>
+						<input type='text' name=email id=email/>
+						
+				</fieldset>
+				
+				import java.io.PrintWriter;
